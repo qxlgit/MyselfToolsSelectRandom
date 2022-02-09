@@ -2,19 +2,6 @@ import java.io.File;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- * 2021-08-28
- * C:\Users\qinxinlong\Pictures\改
- * C:\Users\qinxinlong\Pictures\今日
- *
- * G:\新建文件夹\AV
- *
- * G:\新建文件夹\BZ
- *
- * G:\新建文件夹\Danbooru
- *
- * G:\新建文件夹\里番
- */
 
 class SingleSelectRandom{
     public static void main(String[] args) {
@@ -38,11 +25,11 @@ public class SelectRandom {
 
         while(true){
             System.out.println("请输入选项：\t00选项表示：退出");
-            System.out.println("01选项表示：C:\\Users\\qinxinlong\\Pictures");
-            System.out.println("02选项表示：G:\\新建文件夹\\AV");
-            System.out.println("03选项表示：G:\\新建文件夹\\BZ");
-            System.out.println("04选项表示：G:\\新建文件夹\\Danbooru");
-            System.out.println("05选项表示：G:\\新建文件夹\\里番");
+            System.out.println("01选项表示：路径1");
+            System.out.println("02选项表示：路径2");
+            System.out.println("03选项表示：路径3");
+            System.out.println("04选项表示：路径4");
+            System.out.println("05选项表示：路径5");
             Scanner scanner = new Scanner(System.in);
             String num = scanner.next();
             System.out.println("*********************");
@@ -51,31 +38,31 @@ public class SelectRandom {
                     System.exit(0);
                     break;
                 case "01":
-                    System.out.println("01选项表示：改\t02选项表示：今日");
+                    System.out.println("01选项表示：子文件夹路径1\t02选项表示：子文件夹路径2");
                     num = scanner.next();
                     switch(num){
                         case "01":
-                            path = "C:\\Users\\qinxinlong\\Pictures\\改";
+                            path = "路径";
                             break;
                         case "02":
-                            path = "C:\\Users\\qinxinlong\\Pictures\\今日";
+                            path = "路径";
                             break;
                         default:
-                            path = "C:\\Users\\qinxinlong\\Pictures";
+                            path = "路径";
                             break;
                     }
                     break;
                 case "02":
-                    path = "G:\\新建文件夹\\AV";
+                    path = "路径";
                     break;
                 case "03":
-                    path = "G:\\新建文件夹\\BZ";
+                    path = "路径";
                     break;
                 case "04":
-                    path = "G:\\新建文件夹\\Danbooru";
+                    path = "路径";
                     break;
                 case "05":
-                    path = "G:\\新建文件夹\\里番";
+                    path = "路径";
                     break;
                 default:
                     System.out.println("*********************");
